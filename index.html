@@ -33,7 +33,15 @@
 
     <!-- Title & Favicon -->
     <title>DigitalizeBro - Empowering Brands Through Digital Innovation</title>
-    <link rel="icon" type="image/png" href="/sgcra.png" sizes="192x192" />
+
+    <!-- Logo Implementation -->
+    <link rel="logo" href="https://www.digitalizebro.com/sgcra.png" type="image/png" />
+    <link rel="image_src" href="https://www.digitalizebro.com/sgcra.png" />
+
+    <!-- Favicon Setup -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/sgcra.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/sgcra.png" />
+    <link rel="apple-touch-icon" href="/sgcra.png" />
 
     <!-- Meta Description -->
     <meta
@@ -50,19 +58,28 @@
     <!-- Open Graph (for social sharing) -->
     <meta property="og:title" content="DigitalizeBro - Empowering Brands Through Digital Innovation" />
     <meta property="og:description" content="We craft modern, scalable web applications and digital solutions that bring your brand to life." />
-    <meta property="og:image" content="/sgcra.png" />
+    <meta property="og:image" content="https://www.digitalizebro.com/sgcra.png" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.digitalizebro.com" />
 
-    <!-- Organization Schema (Logo for Google Search Console) -->
+    <!-- Structured Data (Organization Schema) -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "DigitalizeBro",
-        "url": "https://www.digitalizebro.com",
-        "logo": "https://www.digitalizebro.com/sgcra.png"
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "DigitalizeBro",
+      "url": "https://www.digitalizebro.com",
+      "logo": "https://www.digitalizebro.com/sgcra.png",
+      "image": "https://www.digitalizebro.com/sgcra.png",
+      "description": "Empowering brands through digital innovation. DigitalizeBro delivers high-performance web and app solutions that merge creativity, technology, and strategy.",
+      "sameAs": [
+        "https://www.linkedin.com/company/digitalizebro"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "India"
       }
+    }
     </script>
   </head>
 
