@@ -3,10 +3,7 @@ import { motion } from 'framer-motion';
 import { ExternalLink, Code, Palette, Globe, Award, Target, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import CodeBackground from '../components/CodeBackground';
-
-import PoadiumImage from '../../images/works/Poadium.png';
-import Nemadhi from '../../images/works/nemmadi.png';
-import SatoirImage from '../../images/works/sathior.png';
+import projectsData from './projects.json';
 
 interface OurWorksProps {
   onOpenContact: () => void;
@@ -31,62 +28,7 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
     }
   ];
 
-  const projects = [
-    {
-      id: 1,
-      title: 'Nemmadi Dairy Farm Management System',
-      description: 'A comprehensive dairy farm management platform designed to streamline operations, including staff attendance with facial recognition, milk yield tracking, inspection reports, and purchase approvals. Built for efficiency, scalability, and role-based access control.',
-      image: Nemadhi,
-      category: 'Web Application',
-      tech: ['React', 'Django', 'Supabase', 'JWT Authentication', 'Facial Recognition (OpenCV)'],
-      features: [
-        'Facial Recognition Attendance',
-        'Role-Based Access Control (Admin & Supervisor)',
-        'Milk Yield Management',
-        'Weekly Inspection Tracking',
-        'Purchase Request & Approval Workflow',
-        'Real-time Notifications',
-        'Responsive Dashboard'
-      ],
-      link: 'https://nemmadi-dairy-farm.vercel.app/'
-    },
-    {
-    id: 2,
-    title: 'POADIUM',
-    description:
-      'A modern digital agency platform empowering brands through creative design, technology, and marketing solutions. POADIUM focuses on transforming ideas into impactful digital experiences with a clean, futuristic aesthetic and sustainable approach.',
-    image: PoadiumImage,
-    category: 'Website / Brand Platform',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Hosting'],
-    features: [
-      'Dynamic and Responsive UI',
-      'Framer Motion Animations',
-      'Modern Brand Storytelling',
-      'Optimized Performance and SEO',
-      'Sleek Gradient and Typography System',
-      'Fully Deployed on Vercel'
-    ],
-    link: 'https://poadium.com/'
-  },
-  {
-    id: 3,
-    title: 'Satoir',
-    description:
-      'A creative film production company website that showcases cinematic storytelling through sleek visuals and smooth motion effects. Satoir blends art and technology to present film projects, behind-the-scenes insights, and brand identity with elegance.',
-    image: SatoirImage,
-    category: 'Website',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Hosting'],
-    features: [
-      'Cinematic UI and Visual Transitions',
-      'Portfolio Showcase for Films and Media',
-      'Smooth Scroll and Interactive Elements',
-      'Optimized Performance and SEO',
-      'Fully Responsive Design',
-      'Deployed on Vercel'
-    ],
-    link: 'https://www.satoir.com/'
-  }
-  ];
+  const { projects } = projectsData;
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
@@ -101,7 +43,7 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
 
   return (
     <div className="relative min-h-screen overflow-x-hidden">
-      <CodeBackground /> {/* Added matching background */}
+      <CodeBackground />
       
       {/* Hero Section */}
       <section className="relative h-[40vh] md:h-[90vh]" style={{ zIndex: 10 }}>
