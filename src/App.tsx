@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
-import Footer from './components/Footer'; // Import the Footer
+import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import OurWorks from './pages/OurWorks';
@@ -11,6 +11,17 @@ import Contact from './pages/Contact';
 import Feedback from './pages/Feedback';
 import ContactModal from './components/ContactModal';
 import Services from './pages/services';
+
+// Component to handle scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -32,6 +43,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> {/* Add this component */}
       <div className="min-h-screen bg-slate-900 text-white overflow-x-hidden flex flex-col">
         <Header />
         <main className="flex-1">
@@ -47,7 +59,7 @@ function App() {
             <Route path="/feedback" element={<Feedback />} />
           </Routes>
         </main>
-        <Footer /> {/* Add Footer here */}
+        <Footer />
         <ContactModal 
           isOpen={isContactModalOpen} 
           onClose={() => setIsContactModalOpen(false)} 
