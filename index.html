@@ -1,8 +1,25 @@
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1138687075015768');
+fbq('track', 'PageView');
+</script>
+<!-- End Meta Pixel Code -->
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta Pixel Code already added above -->
 
     <!-- Google Site Verification -->
     <meta name="google-site-verification" content="dRGKJOd_CJDHNji4QID6TCOC-em1dn6zA4ACdwpC0RA" />
@@ -22,7 +39,7 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics / gtag -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D53NBS7J30"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -62,7 +79,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.digitalizebro.com" />
 
-    <!-- Structured Data (Organization Schema) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -71,7 +88,7 @@
       "url": "https://www.digitalizebro.com",
       "logo": "https://www.digitalizebro.com/sgcra.png",
       "image": "https://www.digitalizebro.com/sgcra.png",
-      "description": "Empowering brands through digital innovation. DigitalizeBro delivers high-performance web and app solutions that merge creativity, technology, and strategy.",
+      "description": "Empowering brands through digital innovation. DigitalizeBro delivers high-performance web and app solutions merging creativity, technology, and strategy.",
       "sameAs": [
         "https://www.linkedin.com/company/digitalizebro"
       ],
@@ -84,6 +101,12 @@
   </head>
 
   <body>
+    <!-- Meta Pixel NoScript Code (CORRECT LOCATION) -->
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1138687075015768&ev=PageView&noscript=1"/>
+    </noscript>
+
     <!-- Google Tag Manager (noscript) -->
     <noscript>
       <iframe
@@ -93,8 +116,8 @@
         style="display:none;visibility:hidden"
       ></iframe>
     </noscript>
-    <!-- End Google Tag Manager (noscript) -->
 
+    <!-- React App Root -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
