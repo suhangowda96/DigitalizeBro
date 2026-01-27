@@ -9,6 +9,7 @@ import Nemadhi from '../../images/works/nemmadi.png'
 import PoadiumImage from '../../images/works/Poadium.png'
 import SatoirImage from '../../images/works/sathior.png'
 import monaloka from '../../images/works/monaloka.png'
+import CurriceImage from '../../images/works/CURRICE LOGO.png';
 
 interface OurWorksProps {
   onOpenContact: () => void;
@@ -104,7 +105,25 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
         "Fast Loading Performance"
       ],
       link: "https://monalokahomestay.in/"
-    }
+    },
+    {
+      id: 5,
+      title: 'Currice',
+      description:
+        "India’s first curated multi-brand food experience platform designed for large-scale events, weddings, and celebrations. Currice brings premium food brands together under one seamless digital experience with a luxury-first approach.",
+      image: CurriceImage,
+      category: 'Website / Brand Platform',
+      tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Brand Design', 'Vercel Hosting'],
+      features: [
+        'Luxury Brand Identity',
+        'High-Impact Hero Sections',
+        'Smooth Motion Animations',
+        'Event-Focused UX Design',
+        'Fully Responsive Layout',
+        'Optimized Performance & SEO'
+      ],
+      link: 'https://www.currice.in/'
+    },
   ];
 
   const getCategoryIcon = (category: string) => {
