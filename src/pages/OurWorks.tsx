@@ -7,9 +7,10 @@ import CodeBackground from '../components/CodeBackground';
 // import images
 import Nemadhi from '../../images/works/nemmadi.png'
 import PoadiumImage from '../../images/works/Poadium.png'
-import SatoirImage from '../../images/works/sathior.png'
 import monaloka from '../../images/works/monaloka.png'
 import CurriceImage from '../../images/works/CURRICE LOGO.png';
+import MMGranitesImage from '../../images/works/mmgranets.png';
+import FlyingBrushImage from '../../images/works/flyingbrushdisigins.jpeg';
 
 interface OurWorksProps {
   onOpenContact: () => void;
@@ -72,25 +73,7 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
     link: 'https://poadium.com/'
   },
   {
-    id: 3,
-    title: 'Satoir',
-    description:
-      'A creative film production company website that showcases cinematic storytelling through sleek visuals and smooth motion effects. Satoir blends art and technology to present film projects, behind-the-scenes insights, and brand identity with elegance.',
-    image: SatoirImage,
-    category: 'Website',
-    tech: ['React', 'Tailwind CSS', 'Framer Motion', 'Node.js', 'Hosting'],
-    features: [
-      'Cinematic UI and Visual Transitions',
-      'Portfolio Showcase for Films and Media',
-      'Smooth Scroll and Interactive Elements',
-      'Optimized Performance and SEO',
-      'Fully Responsive Design',
-      'Deployed on Vercel'
-    ],
-    link: 'https://www.satoir.com/'
-  },
-  {
-      id: 4,
+      id: 3,
       title: "Monaloka Homestay",
       description: "A beautiful homestay website showcasing serene accommodations and natural surroundings. The platform features gallery displays, booking information, and immersive visuals that capture the essence of peaceful living amidst nature.",
       image : monaloka,
@@ -107,7 +90,7 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
       link: "https://monalokahomestay.in/"
     },
     {
-      id: 5,
+      id: 4,
       title: 'Currice',
       description:
         "India’s first curated multi-brand food experience platform designed for large-scale events, weddings, and celebrations. Currice brings premium food brands together under one seamless digital experience with a luxury-first approach.",
@@ -123,6 +106,42 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
         'Optimized Performance & SEO'
       ],
       link: 'https://www.currice.in/'
+    },
+    {
+      id: 5,
+      title: 'MM Granites & Exports',
+      description:
+        'A professional export-focused website built for a granite manufacturing and export company. The platform showcases premium granite collections, company infrastructure, global reach, and contact inquiry integration with a strong business-oriented UI.',
+      image: MMGranitesImage, // import your image
+      category: 'Website',
+      tech: ['React', 'Tailwind CSS', 'Responsive Design', 'SEO Optimization', 'Business Email Integration'],
+      features: [
+        'Product Showcase Gallery',
+        'Export-Focused Business Layout',
+        'Inquiry Contact Integration',
+        'SEO Optimized Pages',
+        'Mobile Responsive Design',
+        'Professional Branding Structure'
+      ],
+      link: 'https://www.mmgranitesexports.com/'
+    },
+    {
+      id: 6,
+      title: 'Flying Brush Designs',
+      description:
+        'A modern creative studio website built to showcase digital services, branding expertise, and client projects. Designed with a strong visual identity and smooth interactions to reflect innovation and creativity.',
+      image: FlyingBrushImage, // import your image
+      category: 'Website / Brand Platform',
+      tech: ['React', 'Tailwind CSS', 'Framer Motion', 'SEO', 'Vercel Hosting'],
+      features: [
+        'Modern Creative UI',
+        'Smooth Motion Animations',
+        'Portfolio Showcase',
+        'SEO Optimized Structure',
+        'Professional Email & Domain Setup',
+        'Fully Responsive Design'
+      ],
+      link: 'https://www.flyingbrushdesigns.com/'
     },
   ];
 
