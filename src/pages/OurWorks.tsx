@@ -11,6 +11,7 @@ import monaloka from '../../images/works/monaloka.png'
 import CurriceImage from '../../images/works/CURRICE LOGO.png';
 import MMGranitesImage from '../../images/works/mmgranets.png';
 import FlyingBrushImage from '../../images/works/flyingbrushdisigins.jpeg';
+import herbstheamessetials from '../../images/works/herbs_thyme_essentials.jpeg';
 
 interface OurWorksProps {
   onOpenContact: () => void;
@@ -142,6 +143,31 @@ const OurWorks: React.FC<OurWorksProps> = ({ onOpenContact }) => {
         'Fully Responsive Design'
       ],
       link: 'https://www.flyingbrushdesigns.com/'
+    },
+    {
+      id: 7,
+      title: 'Herbs & Thymes Essentials',
+      description:
+        'A premium herbal skincare and wellness e-commerce platform designed to reflect luxury, purity, and nature-inspired beauty. The website delivers an immersive shopping experience with elegant visuals, modern UI, responsive layouts, and a strong brand identity.',
+      image: herbstheamessetials,
+      category: 'E-Commerce Website',
+      tech: [
+        'React',
+        'TypeScript',
+        'Tailwind CSS',
+        'Framer Motion',
+        'Responsive Design',
+        'SEO Optimization'
+      ],
+      features: [
+        'Premium Luxury UI/UX',
+        'Product Collection Showcase',
+        'Mobile & Desktop Optimized',
+        'Smooth Animations & Interactions',
+        'SEO Friendly Architecture',
+        'Brand-Focused Design System'
+      ],
+      link: 'https://www.herbsthymesessentials.com/'
     },
   ];
 
